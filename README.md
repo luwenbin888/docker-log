@@ -1,5 +1,5 @@
 # docker-log
-1) Go to demo-boot, run `maven clean package -Dmaven.test.skip=True`    
+1) Go to demo-boot, run `mvn clean package -Dmaven.test.skip=True`    
 2) Run `docker build -t demo-java .`    
 3) Go to fluentd-docker-image/v1.3/alpine, run `docker build -t fluentd .`    
 4) Install Elasticsearch, run `docker run -p 9200:9200 -p 9300:9300 --name esdocker -d -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.3`    
